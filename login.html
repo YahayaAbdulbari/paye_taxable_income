@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paye taxable income</title>
+    <title>login</title>
     <link rel="stylesheet" href="./bootstrap5/css/all.css">
     <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
 
-    <!-- ALL NAVIGATIONS -->
     <!-- ALL NAVIGATIONS -->
     <header>
         <div class="top">
@@ -24,7 +23,7 @@
             </div>
             <!-- sigup/login btns -->
             <div class="nav-btns">
-                <a href="./login.html"><button id="signin">sign in</button></a>
+                <a href="../login.html"><button id="signin">sign in</button></a>
                 <a href="#"><button id="signup">sign up</button></a>
             </div>
             <div class="toggle-btn">
@@ -35,7 +34,7 @@
         <div class="bottom">
             <nav class="nav">
                 <ul>
-                    <a href="#"><li>home</li></a>
+                    <a href="./index.html"><li>home</li></a>
                     <a href="#"><li>register</li></a>
                     <a href="#"><li>calculate tax</li></a>
                     <a href="#"><li>verifications</li></a>
@@ -47,12 +46,12 @@
         </div>
     </header>
 
-   <!-- side navigation links -->
-   <aside class="aside">
+    <!-- side navigation links -->
+    <aside class="aside">
         <nav>
             <h2>side menu</h2>
             <ul>
-                <a href="#"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="./index.html"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
                 <a href="#"><li><i class="fa-solid fa-registered"></i>register</li></a>
                 <a href="#"><li><i class="fa-solid fa-calculator"></i>calculate tax</li></a>
                 <a href="#"><li><i class="fa-solid fa-receipt"></i>verifications</li></a>
@@ -62,23 +61,61 @@
                 <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
             </ul>
         </nav>
-        <script src="./script/mainNavigation.js"></script>
+        <script src="../script/mainNavigation.js"></script>
     </aside>
     <!-- ALL NAVIGATIONS -->
-    <!-- ALL NAVIGATIONS -->
 
-    <section class="hero">
-        <div class="image">
-            <img src="./images/company2.jpg" alt="hero image">
-        </div>
-        <div class="hero-tittle">
-            <h2>welcome address</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quibusdam perferendis mollitia voluptatem ducimus officiis provident placeat aut. Voluptate sed eveniet magni officiis nostrum culpa exercitationem, repellendus eaque numquam explicabo.
-            </p>
-            <a href="#"><button>get started</button></a>
-        </div>
-    </section>
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="#" method="post">
+            <h2>Login</h2>
+
+            <!-- username -->
+            <div class="inputbox">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- email address -->
+            <div class="inputbox">
+                <label for="email">Email-address</label>
+                <input type="email" name="email" id="email" placeholder="Email-address" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="login" id="login" value="Login">
+            </div>
+
+            <!-- forgotten pass -->
+            <a href="#" id="resetpass">
+                <p>forgotten password</p>
+            </a>
+
+            <a href="#" id="signup">
+                <p><span>Sign-up</span> if you don't have account</p>
+            </a>
+
+            <!-- <script src="../script/form.js"></script> -->
+        </form>
+
+    </div>
     
 </body>
 </html>
