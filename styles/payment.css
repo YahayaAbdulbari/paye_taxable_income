@@ -1,0 +1,29 @@
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+input{
+    position: relative;
+}
+
+label{
+    position: absolute;
+}

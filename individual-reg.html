@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paye taxable income</title>
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/tcc-verification.css">
+</head>
+<body>
+
+    <!-- ALL NAVIGATIONS -->
+    <!-- ALL NAVIGATIONS -->
+    <header>
+        <div class="top">
+            <!-- paye taxable income logo -->
+            <div class="logo">
+                <a href="#">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h1>paye</h1>
+                    <p>taxable income</p>
+                </a>
+            </div>
+            <!-- sigup/login btns -->
+            <div class="nav-btns">
+                <a href="../login.html"><button id="signin">sign in</button></a>
+                <a href="#"><button id="signup">sign up</button></a>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="bottom">
+            <nav class="nav">
+                <ul>
+                    <a href="../index.html"><li>home</li></a>
+                    <a href="#"><li>register</li></a>
+                    <a href="#"><li>calculate tax</li></a>
+                    <a href="./user/verification.html"><li>verifications</li></a>
+                    <a href="./user/payment.html"><li>make payment</li></a>
+                    <a href="#"><li>help</li></a>
+                    <a href="#"><li>about</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- side navigation links -->
+    <aside class="aside">
+        <nav>
+            <h2>side menu</h2>
+            <ul>
+                <a href="./index.html"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="./individual-reg.html"><li><i class="fa-solid fa-registered"></i>register</li></a>
+                <a href="./individual-reg.html"><li><i class="fa-solid fa-calculator"></i>calculate tax</li></a>
+                <a href="./user/verification.html"><li><i class="fa-solid fa-receipt"></i>verifications</li></a>
+                <a href="./user/payment.html"><li><i class="fa-solid fa-money-bill"></i>make payment</li></a>
+                <a href="#"><li><i class="fa-solid fa-user-shield"></i>privacy policy</li></a>
+                <a href="#"><li><i class="fa-solid fa-users-gear"></i>help</li></a>
+                <a href="#"><li><i class="fa-solid fa-building"></i>about</li></a>
+            </ul>
+        </nav>
+        <script src="../script/mainNavigation.js"></script>
+    </aside>
+    <!-- ALL NAVIGATIONS -->
+    <!-- ALL NAVIGATIONS -->
+
+    <main>
+        <div class="verif-cont">
+
+            <h2>individual registration</h2>
+            
+            <form action="#" class="verif-form">
+
+                <div class="inputbox">
+                    <label for="firstname">first name</label>
+                    <i class="fa-solid fa-user-alt"></i>
+                    <input type="text" name="firstname" placeholder="first name" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="lastname">last name</label>
+                    <i class="fa-solid fa-user-alt"></i>
+                    <input type="text" name="lastname" placeholder="last name" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="othername">other name</label>
+                    <i class="fa-solid fa-user-alt"></i>
+                    <input type="text" name="othername" placeholder="other name" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="email">email address</label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder="email address" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="phone-number">phone number</label>
+                    <i class="fa-solid fa-phone-alt"></i>
+                    <input type="tel" name="phone-number" placeholder="phone number" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="nin">nin number</label>
+                    <i class="fa-solid fa-book-atlas"></i>
+                    <input type="number" name="nin" placeholder="nin number" required>
+                </div>
+
+                <div class="inputbox">
+                    <label for="gender" id="c-nunber">gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+
+                <div class="inputbox">
+                    <label for="password">password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="inputbox">
+                    <label for="password">confirm password</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="confirm-password" placeholder="confirm password" required>
+                </div>
+
+                <button type="submit">register</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="logo">
+            <a href="#">
+                <i class="fa-solid fa-ranking-star"></i>
+                <h1>paye</h1>
+                <p>taxable income</p>
+            </a>
+        </div>
+
+        <div class="copyr">
+            &copy;paye taxable income
+        </div>
+
+    </footer>
+    
+</body>
+</html>

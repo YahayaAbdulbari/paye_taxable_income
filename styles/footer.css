@@ -1,0 +1,114 @@
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer .logo{
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin-top: 40px;
+}
+footer .logo:hover{
+    opacity: .7;
+}
+
+footer .logo img{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+footer .logo a{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+footer .logo a h1{
+    font-size: 2.5rem;
+    margin-left: 28px;
+}
+footer .logo a p{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+footer .logo a i{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-size: 2.4rem;
+    color: yellow;
+}
+
+footer .copyr{
+    width: 100%;
+    height: 40px;
+    background-color: var(--blue);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+@media (max-width:600px) {
+    footer{
+        height: 120px;
+    }
+    footer .logo{
+        width: 140px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    
+    footer .logo a h1{
+        margin-left: 1rem;
+    }
+    footer .logo a p{
+        font-size: .8rem;
+    }
+  
+    footer .logo a i{
+        font-size: 1.5rem;
+        top: 5px;
+        left: 5px;
+    }
+
+    footer .copyr{
+        font-size: .8rem;
+    }
+}

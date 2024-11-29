@@ -1,0 +1,191 @@
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/company2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verif-cont{
+    width: 80%;
+    height: 80%;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.verif-cont h2{
+    color: yellow;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--darkblue);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.verif-cont .verif-form{
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#c-nunber{
+    grid-column: span 3;
+}
+
+.verif-cont .verif-form .inputbox{
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    overflow: hidden;
+    grid-column: span 1;
+    position: relative;
+}
+
+.verif-cont .verif-form .inputbox i{
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+.verif-cont .verif-form input,select{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.verif-cont .verif-form label{
+    color: yellow;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.verif-cont .verif-form button{
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    color: var(--darkblue);
+    background-color: yellow;
+    text-transform: capitalize;
+    align-self: last baseline;
+}
+.verif-cont .verif-form button:hover{
+    color: white;
+    background-color: var(--valid);
+}
+
+@media (max-width:600px) {
+    main {
+        height: auto;
+    }
+    
+    .verif-cont{
+        width: 100vw;
+        height: auto;
+        border-radius: 3px;
+    }
+    
+    .verif-cont h2{
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    
+    .verif-cont .verif-form{
+        width: 80%;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    #c-nunber{
+        grid-column: span 1;
+    }
+
+    .verif-cont .verif-form .inputbox i{
+        top: 26px;
+        font-size: .8rem;
+    }
+
+    .verif-cont .verif-form input,select{
+        height: 30px;
+        font-size: .8rem;
+    }
+    .verif-cont .verif-form label{
+        font-size: 1rem;
+    }
+
+    .verif-cont .verif-form button{
+        height: 32px;
+    }
+}
+
+@media (min-width:600px) and (max-width:920px) {
+    main{
+        padding: 0  30px;
+    }
+
+    .verif-cont{
+        width: 100vw;
+        height: auto;
+        border-radius: 3px;
+    }
+    
+    .verif-cont h2{
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    
+    .verif-cont .verif-form{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    #c-nunber{
+        grid-column: span 2;
+    }
+}
